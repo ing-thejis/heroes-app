@@ -1,22 +1,18 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-import NavBar from '../components/ui/NavBar'
-import MarvelScreen from '../components/marvel/MarvelScreen'		
-import DcScreen from '../components/dc/DcScreen'
 import LoginScreen from '../components/login/LoginScreen'
-import SearchScreen from '../components/search/SearchScreen'
+import DashboardRouter from './DashboardRouter'
 
 const AppRouter = () => {
 	return (
 		<Router>
-			<NavBar />
 			<Routes>
-				<Route path="/" element={ <MarvelScreen /> } />
-				<Route path="/marvel" element={ <MarvelScreen /> } />
-				<Route path="/dc" element={ <DcScreen /> } />
-				<Route path="/search" element={ <SearchScreen /> } />
+
 				<Route path="/login" element={ <LoginScreen /> } />
+				
+				<Route path="/*" element={ <DashboardRouter /> } />
+
 			</Routes>
 		</Router>
 	)
