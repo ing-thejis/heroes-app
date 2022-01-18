@@ -1,10 +1,13 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 const NavBar = () => {
 
+	const navigate = useNavigate();
 	const handleLogout = () => {
-
+		navigate("/login", {
+			replace: true
+		})
 		console.log('Logout')
 	}
 

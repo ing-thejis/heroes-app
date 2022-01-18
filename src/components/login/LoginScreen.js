@@ -1,9 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const LoginScreen = () => {
 
+	const navigate = useNavigate();
+
 	const handleLogin = () => {
-		console.log('login')
+		navigate("/", {
+			replace: true
+		})
 	}
 
 	return (
