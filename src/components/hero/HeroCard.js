@@ -9,7 +9,7 @@ const HeroCard = ({
 	first_apperance,
 	characters
 }) => {
-	const imagePath = `/assets/${id}.jpg`;
+	const imagePath = `./assets/${id}.jpg`;
 
 	return (
 		<div className="col">

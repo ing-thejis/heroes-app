@@ -13,7 +13,7 @@ const HeroScreen = () => {
 		return <Navigate to="/" />
 	}
 
-	const imagePath = `/assets/${hero.id}.jpg`;
+	const imagePath = `./assets/${hero.id}.jpg`;
 
 	const handleReturn = () => {
 		navigate( -1 )
