@@ -13,7 +13,7 @@ const HeroScreen = () => {
 		return <Navigate to="/" />
 	}
 
-	const imagePath = `./assets/${hero.id}.jpg`;
+	const imagePath = `/assets/${hero.id}.jpg`;
 
 	const handleReturn = () => {
 		navigate( -1 )
@@ -28,7 +28,7 @@ const HeroScreen = () => {
 				<h3>{hero.superhero}</h3>
 				<ul className="list-group listgroup-flush">
 					<li className="list-group-item"><b>Alter ego: </b>{hero.alter_ego}</li>
-					<li className="list-group-item"><b>First apperance: </b>{hero.first_apperance}</li>
+					<li className="list-group-item"><b>First appearance: </b>{hero.first_appearance}</li>
 					<li className="list-group-item"><b>Publisher: </b>{hero.publisher}</li>
 				</ul>
 		
