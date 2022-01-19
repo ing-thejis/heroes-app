@@ -16,7 +16,7 @@ const NavBar = () => {
 		navigate("/login", {
 			replace: true
 		})
-		console.log('Logout')
+
 	}
 
 	return (
